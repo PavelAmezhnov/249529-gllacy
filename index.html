@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <img class="logo" src="http://placehold.it/150x100" width="160" height="70" alt="GllacyShop">
+      <img class="logo" src="img/logo.svg" width="154" height="64" alt="GllacyShop">
       <nav class="main-navigation">
         <ul>
           <li><a href="#">Каталог</a></li>
@@ -15,11 +16,22 @@
         </ul>
       </nav>
       <div class="user-block">
-        <form class="search-form" action="#" method="post">
-          <input class="search" type="search">
-        </form>   
-        <a class="login" href="#">Вход</a>
-        <a class="basket" href="#">Пусто</a>
+        <form class="search-form" action="#" method="get">
+          <a class="search-button" href="#">
+            <img src="img/search-icon.png" width="17" height="17" alt="search-button">
+          </a>
+          <!--<input class="search-input" type="search" placeholder="Что ищем?">-->
+        </form>
+        <form class="login-form" action="#" method="post">  
+          <a class="login-button" href="#">
+            <img src="img/login-icon.png" width="21" height="19" alt="login-button">Вход
+          </a>
+        </form>
+        <form class="basket-form" action="#" method="get">
+          <a class="basket-button" href="#">
+            <img src="img/basket-empty-icon.png" width="21" height="20" alt="basket-button">Пусто
+          </a>
+        </form>
       </div>
       <div class="phone-number">
         <span>С 10 до 20, ежедневно</span>
@@ -29,11 +41,11 @@
     <main>
       <div class="container">
         <div class="index-content">
-          <input type="radio" name="slider-radio">
           <input type="radio" name="slider-radio" checked>
           <input type="radio" name="slider-radio">
+          <input type="radio" name="slider-radio">
           <div class="slider-promo">
-            <img class="slider-promo-img" scr="http://placehold.it/150x100" width="700" height="580" alt="Крем-брюле и пломбир с малиновым джемом">
+            <img class="slider-promo-img" src="img/ice-cream-promo.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
             <span class="slider-promo-title">Крем-брюле и пломбир с малиновым джемом</span>
             <button class="slider-promo-btn" type="button">Давайте оба!</button>
           </div>
@@ -52,44 +64,48 @@
         </div>
         <div class="index-content">
           <section class="hit-item">
-            <div class="hit-label">Хит</div>
-            <img class="hit-item-img" src="http://placehold.it/150x100" width="270" height="270" alt="">
+            <div class="hit-label"><img src="img/hit-label.png" width="61" height="61" alt="ХИТ"></div>
+            <img class="hit-item-img" src="img/hit-1.png" width="267" height="267" alt="ХИТ-1">
             <div class="hit-item-price">310 &#8381;/кг</div>
             <a class="hit-item-desc" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </section>
           <section class="hit-item">
-            <div class="hit-label">Хит</div>
-            <img class="hit-item-img" src="http://placehold.it/150x100" width="270" height="270" alt="">
+            <div class="hit-label"><img src="img/hit-label.png" width="61" height="61" alt="ХИТ"></div>
+            <img class="hit-item-img" src="img/hit-2.png" width="267" height="267" alt="ХИТ-2">
             <div class="hit-item-price">380 &#8381;/кг</div>
             <a class="hit-item-desc" href="#">Сливочно-кофейное с кусочками шоколада</a>
           </section>
           <section class="hit-item">
-            <div class="hit-label">Хит</div>
-            <img class="hit-item-img" src="http://placehold.it/150x100" width="270" height="270" alt="">
+            <div class="hit-label"><img src="img/hit-label.png" width="61" height="61" alt="ХИТ"></div>
+            <img class="hit-item-img" src="img/hit-3.png" width="267" height="267" alt="ХИТ-3">
             <div class="hit-item-price">355 &#8381;/кг</div>
             <a class="hit-item-desc" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </section>
           <section class="hit-item">
-            <div class="hit-label">Хит</div>
-            <img class="hit-item-img" src="http://placehold.it/150x100" width="270" height="270" alt="">
+            <div class="hit-label"><img src="img/hit-label.png" width="61" height="61" alt="ХИТ"></div>
+            <img class="hit-item-img" src="img/hit-4.png" width="267" height="267" alt="ХИТ-4">
             <div class="hit-item-price">415 &#8381;/кг</div>
             <a class="hit-item-desc" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </section>  
         </div>
         <div class="index-content">
-          <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+          <span>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</span>
           <div class="index-content-left">
+            <img src="img/ice-cream-icon.png" width="49" height="49" alt="">
             <p>
               Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.  
             </p>
+            <img src="img/leaf-icon.png" width="49" height="49" alt="">
             <p>
               Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
             </p>
           </div>
           <div class="index-content-right">
+            <img src="img/cow-icon.png" width="49" height="49" alt="">
             <p>
               Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
             </p>
+            <img src="img/thermometer-icon.png" width="49" height="49" alt="">
             <p>
               Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
             </p> 
@@ -111,8 +127,10 @@
       </div>
       <div class="index-content">
         <div class="wrap-map">
-          <img class="map" src="http://placehold.it/150x100" width="1200" height="430">
+          <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KqdFS0n1-56u70LenPkeqdzMQDjDKEl5&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>-->
+          <img class="map" src="img/map.jpg" width="1200" height="430" alt="Карта проезда">
         </div>
+        <img src="img/pin-icon.png" width="218" height="142" alt="">
         <div class="contacts">
           <span class="contacts-address">
             Адрес главного офиса и
@@ -136,21 +154,21 @@
     </main>
     <footer class="main-footer">
       <div class="social">
-        <a class="tw" href="#"></a> 
-        <a class="insta" href="#"></a>
-        <a class="fb" href="#"></a>
-        <a class="vk" href="#"></a>
+        <a class="tw" href="#"><img src="img/tw-icon.png" width="32" height="32" alt="Твитер"></a> 
+        <a class="insta" href="#"><img src="img/insta-icon.png" width="32" height="32" alt="Инстаграм"></a>
+        <a class="fb" href="#"><img src="img/fb-icon.png" width="32" height="32" alt="Фейсбук"></a>
+        <a class="vk" href="#"><img src="img/vk-icon.png" width="32" height="32" alt="ВКонтакте"></a>
       </div>
       <nav class="second-navigation">
         <ul>
-          <li class="with-love"><img src="http://placehold.it/150x100" width="15" height="15" alt="heart"><a href="#">Для поставщиков</a></li>
+          <li class="with-love"><img src="img/heart-icon.png" width="15" height="13" alt="heart"><a href="#">Для поставщиков</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </nav>
       <div class="copyright">
-        <img class="copyright-logo" src="http://placehold.it/150x100" width="110" height="40" alt="HTML Academy">
+        <img class="copyright-logo" src="img/HTMLAcademy-logo.png" width="108" height="38" alt="HTML Academy">
         <span>Сделано в <a>HTML Academy</a> &#169; 2016</span>
       </div>
     </footer>
