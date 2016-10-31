@@ -1,3 +1,85 @@
 body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  font-weight: normal;
+  font-family: "Roboto", "Arial", sans-serif;
   background-color: #9bafa4;
+}
+
+h1, h2 {
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  min-width: 1200px;
+}
+
+.logo {
+  margin: 10px 0 0 22px;
+  outline: 1px solid; 
+}
+
+.main-navigation {
+  display: inline-block;
+  vertical-align: top;
+  margin: 33px 0 0 2.5%;
+  outline: 1px solid;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.main-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.user-block {
+  float: right;  
+  margin: 23px 27px 0 0;
+  font-size: 0;
+  outline: 1px solid;
+}
+
+.user-block form {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone-number {
+  clear: right;
+  float: right;
+  margin: 75px 27px 0 0;
+  outline: 1px solid;
+}
+
+.phone-number div {
+  text-align: right;
+}
+
+.phone-number div:first-child {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone-number div:last-child {
+  font-size: 22px;
+  line-height: 24px
 }
