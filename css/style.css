@@ -15,10 +15,10 @@ h1, h2 {
   color: #ffffff;
   font-weight: bold;
 }
-<<<<<<< HEAD
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .main-header {
@@ -48,6 +48,7 @@ a {
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 600;
 }
 
 .user-block {
@@ -73,14 +74,100 @@ a {
 
 .phone-number div {
   text-align: right;
+  color: #fff;
 }
 
 .phone-number div:first-child {
   font-size: 14px;
   line-height: 16px;
+  font-weight: 600;
 }
 
 .phone-number div:last-child {
   font-size: 22px;
-  line-height: 24px
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.container {
+  width: 1145px;
+  margin: 0 auto;
+  outline: 1px solid;
+}
+
+.slider-radio {
+  
+}
+
+.slider-promo {
+  width: 700px;
+  margin: 0 auto;
+  outline: 1px solid;
+}
+
+.slider-promo-title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 600;
+  color: #fff; 
+  
+}
+
+.slider-promo-btn {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  color: #fff;
+  height: 63px;
+  width: 279px;
+  border-radius: 31.5px;
+  background-image: linear-gradient(to bottom, #f26839, #db4c38);
+}
+
+.index-content {
+  
+}
+
+.index-content:nth-child(2):after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.index-content-left, .index-content-right {
+  width: 560px;
+}
+
+.index-content-left {
+  float: left;
+}
+
+.index-content-right {
+  float: right;
+}
+
+.raspberry {
+  background: url(../img/raspberry-bg.png), #c9224a;
+  color: #fff;
+  
+}
+
+.chocolate {
+  background: url(../img/chocolate-bg.png), #6c4638;
+  color: #fff;
+}
+
+.hit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: 1px solid;
+}
+
+.hit-item {
+  width: 267px;
+}
+
+.index-content:nth-child(4) {
+  background: url(../img/waffle-bg.jpg), #e9dcc3;
 }
