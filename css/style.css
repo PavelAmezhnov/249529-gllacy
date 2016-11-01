@@ -15,7 +15,6 @@ h1, h2 {
   color: #ffffff;
   font-weight: bold;
 }
-<<<<<<< HEAD
 
 a {
   text-decoration: none;
@@ -83,4 +82,10 @@ a {
 .phone-number div:last-child {
   font-size: 22px;
   line-height: 24px
+}
+
+.container {
+  margin: 0 auto;
+  width: 95.4%;
+  max-width: 1200px;
 }
