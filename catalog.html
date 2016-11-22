@@ -126,10 +126,9 @@
               </div>
             </div>
             <div class="search-form-range-wrap">
-              <label class="search-form-range" for="search-form-range">Цена: 100 руб. - 500 руб.</label>
+              <label class="search-form-range">Цена: 100 руб. - 500 руб.</label>
               <div class="search-form-range-input-wrap">
                 <div class="search-form-range-input"></div>
-                <!--<input id="search-form-range" type="range" min="0" max="1000" step="1" value="500">-->
               </div>
             </div>
             <div class="search-form-fat-wrap">
@@ -163,6 +162,10 @@
               </div>
             </div>
             <button class="search-form-btn" type="submit">Применить</button>
+            <noscript class="search-form-nojs-wrap">
+              <span>Кажется, у Вас в браузере отключен JavaScript. Для поиска по фильтру пройдите по ссылке</span>
+              <a href="#">Поиск</a>
+            </noscript>
           </div>
         </form>
         <div class="ice-cream">
@@ -344,14 +347,19 @@
         </div>
         <nav class="second-navigation">
           <ul>
-            <div class="second-navigation-left">
-              <li class="with-love"><a href="#">Для поставщиков</a></li>
-              <li><a href="#">О производстве</a></li>
-            </div>
-            <div class="second-navigation-right">
-              <li><a href="#">Наши документы</a></li>
+            <li class="second-navigation-left">
+              <ul>
+                <li class="with-love"><a href="#">Для поставщиков</a></li>
+                <li><a href="#">О производстве</a></li>
+                
+              </ul>
+            </li>
+            <li class="second-navigation-right">
+              <ul>
+                <li><a href="#">Наши документы</a></li>
               <li><a href="#">Экологические стандарты</a></li>
-            </div>
+              </ul>
+            </li>
           </ul>
         </nav>
         <div class="wrap-copyright">
