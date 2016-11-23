@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
@@ -11,12 +12,11 @@
     <input id="slider-radio-item-2" type="radio" name="slider-radio">
     <input id="slider-radio-item-3" type="radio" name="slider-radio">
     <div class="main-wrap">
-      <header class="main-header-wrap">
-        <div class="main-header">
-          <div class="logo-wrap">
+      <header class="main-header">
+        <div class="logo-wrap">
             <img class="logo" src="img/logo.svg" width="154" height="64" alt="GllacyShop">
           </div>
-          <nav class="main-navigation">
+        <nav class="main-navigation">
             <ul class="main-navigation-menu">
               <li class="main-navigation-menu-item">
                 <a href="#">Каталог</a>
@@ -36,7 +36,7 @@
               </li>     
             </ul>
           </nav>
-          <div class="user-block">
+        <div class="user-block">
             <form class="fast-search-form" action="#" method="get">
               <a class="fast-search-btn" href="#"></a>
               <div class="fast-search-form-input-wrap">
@@ -61,15 +61,13 @@
               <a class="basket-btn" href="#">Пусто</a>
             </form>
           </div>
-          <div class="phone-number">
+        <div class="phone-number">
             <div>С 10 до 20, ежедневно</div>
             <div>8 812 450-25-25</div>
           </div>
-        </div>
       </header>
       <main class="content">
-        <div class="container">
-          <div class="index-content promo">
+        <div class="index-content promo">
             <div class="slider-promo promo-1">
               <span class="slider-promo-title">Крем-брюле и пломбир с малиновым джемом </span>
               <a class="slider-promo-btn" href="#">Давайте оба!</a>
@@ -88,7 +86,7 @@
               <label for="slider-radio-item-3"></label>
             </div>
           </div>
-          <div class="index-content bonus">
+        <div class="index-content bonus">
             <div class="index-content-left raspberry">
               <h2>Малинка даром!</h2>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -100,7 +98,7 @@
               <a class="btn" href="#">Хочу шоколадки!</a>
             </div>
           </div>
-          <div class="index-content hit">
+        <div class="index-content hit">
             <section class="hit-item">
               <img class="hit-item-img" src="img/hit-1.png" width="267" height="267" alt="ХИТ-1">
               <div class="hit-item-price">
@@ -154,7 +152,7 @@
               </div>
             </section>  
           </div>
-          <div class="index-content features">
+        <div class="index-content features">
             <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
             <div class="index-content-left">
               <p class="features-item">
@@ -173,7 +171,7 @@
               </p> 
             </div>
           </div>
-          <div class="index-content news">
+        <div class="index-content news">
             <div class="index-content-left blog">
               <div class="blog-news">Новое в нашем блоге</div>
               <a class="blog-news-more" href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -190,9 +188,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="index-content map">
-          <div class="wrap-contacts">
+      </main>
+      <div class="map">
+        <div class="wrap-contacts">
             <div class="contacts">
               <span>
                 Адрес главного офиса и<br>
@@ -208,43 +206,40 @@
               <a class="contacts-btn" href="#">Форма обратной связи</a>
             </div> 
           </div>
-          <div class="map-wrap">
+        <div class="map-wrap">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KqdFS0n1-56u70LenPkeqdzMQDjDKEl5&amp;width=%99.9&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
           </div>
-        </div>
-      </main>
-    <footer class="main-footer-wrap">
-        <div class="main-footer">
-          <div class="social">
-            <a class="tw" href="#"></a> 
-            <a class="insta" href="#"></a>
-            <a class="fb" href="#"></a>
-            <a class="vk" href="#"></a>
-          </div>
-          <nav class="second-navigation">
+      </div>
+      <footer class="main-footer">
+        <div class="social">
+        <a class="tw" href="#"></a> 
+        <a class="insta" href="#"></a>
+        <a class="fb" href="#"></a>
+        <a class="vk" href="#"></a>
+</div>
+        <nav class="second-navigation">
+        <ul>
+          <li class="second-navigation-left">
             <ul>
-              <li class="second-navigation-left">
-                <ul>
-                  <li class="with-love"><a href="#">Для поставщиков</a></li>
-                  <li><a href="#">О производстве</a></li>
-                </ul>
-              </li>
-              <li class="second-navigation-right">
-                <ul>
-                  <li><a href="#">Наши документы</a></li>
-                  
-                  <li><a href="#">Экологические стандарты</a></li>
-                </ul>
-              </li>
+              <li class="with-love"><a href="#">Для поставщиков</a></li>
+              <li><a href="#">О производстве</a></li>
             </ul>
-          </nav>
-          <div class="copyright-wrap">
-            <img class="copyright-logo" src="img/HTMLAcademy-logo.png" width="108" height="38" alt="HTML Academy">
-            <span class="copyright">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2016</span>
-          </div>
-        </div>
+          </li>
+          <li class="second-navigation-right">
+            <ul>
+              <li><a href="#">Наши документы</a></li>
+
+              <li><a href="#">Экологические стандарты</a></li>
+            </ul>
+          </li>
+        </ul>
+</nav>
+        <div class="copyright-wrap">
+        <img class="copyright-logo" src="img/HTMLAcademy-logo.png" width="108" height="38" alt="HTML Academy">
+        <span class="copyright">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2016</span>
+</div>
       </footer>
-    <form class="feedback-form">
+      <form class="feedback-form">
       <button class="feedback-form-close" type="button"></button>
       <h2>Мы обязательно вам ответим!</h2>
       <div class="feedback-form-name-wrap">
@@ -261,6 +256,8 @@
       </div>
       <button type="submit">Отправить</button>
     </form>
+      <div class="overlay"></div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
