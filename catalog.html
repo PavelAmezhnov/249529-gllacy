@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header-wrap">
-      <div class="main-header">
+    <div class="catalog-main-wrap">
+      <header class="main-header">
         <div class="logo-wrap">
           <a href="index.html">
             <img class="logo" src="img/logo.svg" width="154" height="64" alt="GllacyShop">
@@ -18,12 +19,12 @@
             <li class="main-navigation-menu-item">
               <a class="active">Каталог</a>
               <ul class="main-navigation-menu-catalog">
-                  <li class="main-navigation-menu-catalog-item"><a href="#">Новинки</a></li>
-                  <li class="main-navigation-menu-catalog-item"><a class="active" href="#">Сливочное</a></li>
-                  <li class="main-navigation-menu-catalog-item"><a href="#">Щербеты</a></li>
-                  <li class="main-navigation-menu-catalog-item"><a href="#">Фруктовый лед</a></li>
-                  <li class="main-navigation-menu-catalog-item"><a href="#">Мелорин</a></li>
-                </ul>
+                <li class="main-navigation-menu-catalog-item"><a href="#">Новинки</a></li>
+                <li class="main-navigation-menu-catalog-item"><a class="active" href="#">Сливочное</a></li>
+                <li class="main-navigation-menu-catalog-item"><a href="#">Щербеты</a></li>
+                <li class="main-navigation-menu-catalog-item"><a href="#">Фруктовый лед</a></li>
+                <li class="main-navigation-menu-catalog-item"><a href="#">Мелорин</a></li>
+              </ul>
             </li>
             <li class="main-navigation-menu-item"><a href="#">Доставка и оплата</a></li>
             <li class="main-navigation-menu-item"><a href="#">О Компании</a></li>   
@@ -33,22 +34,22 @@
           <form class="fast-search-form" action="#" method="get">
             <a class="fast-search-btn" href="#"></a>
             <div class="fast-search-form-input-wrap">
-                <input class="fast-search-form-input" type="search" placeholder="Что ищем?">
-              </div>
+              <input class="fast-search-form-input" type="search" placeholder="Что ищем?">
+            </div>
           </form>
           <form class="login-form" action="#" method="post">  
             <a class="login-btn" href="#">Вход</a>
             <div class="login-form-input-wrap">
-                <input type="email" placeholder="Электронная почта">
-                <input type="password" placeholder="Пароль">
-                <div>
-                  <button type="submit">Войти</button>
-                  <div class="new-reg-wrap">
-                    <span>Забыли пароль?</span>
-                    <a class="new-reg" href="#">Новая регистрация</a>
-                  </div>
+              <input type="email" placeholder="Электронная почта">
+              <input type="password" placeholder="Пароль">
+              <div>
+                <button type="submit">Войти</button>
+                <div class="forget-new-wrap">
+                  <a class="forget-pswrd" href="#">Забыли пароль?</a>
+                  <a class="new-reg" href="#">Новая регистрация</a>
                 </div>
               </div>
+            </div>
           </form>
           <form class="basket-form full" action="#" method="get">
             <a class="basket-btn" href="#">2 товара</a>
@@ -107,10 +108,8 @@
             <div>8 812 450-25-25</div>
           </div>
         </div>
-      </div>
-    </header>
-    <main class="content">
-      <div class="container">
+      </header>
+      <main class="content">
         <h1>Сливочное мороженое</h1>
         <form class="search-form" action="#" method="post">
           <div class="search-form-upper">
@@ -162,11 +161,11 @@
               </div>
             </div>
             <button class="search-form-btn" type="submit">Применить</button>
-            <noscript class="search-form-nojs-wrap">
-              <span>Кажется, у Вас в браузере отключен JavaScript. Для поиска по фильтру пройдите по ссылке</span>
-              <a href="#">Поиск</a>
-            </noscript>
           </div>
+          <noscript class="search-form-nojs-wrap">
+            <span>Кажется, у Вас в браузере отключен JavaScript. Для поиска по фильтру пройдите по ссылке</span>
+            <a href="#">Поиск</a>
+          </noscript>
         </form>
         <div class="ice-cream">
           <section class="ice-cream-item">
@@ -179,7 +178,7 @@
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>
           <section class="ice-cream-item">
@@ -192,7 +191,7 @@
               <a href="#">Сливочно-кофейное с кусочками шоколада</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>
           <section class="ice-cream-item">
@@ -205,7 +204,7 @@
               <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>
           <section class="ice-cream-item">
@@ -218,7 +217,7 @@
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>
           <section class="ice-cream-item">
@@ -244,7 +243,7 @@
               <a href="#">Сливочно-черничное с цельными ягодами черники</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>
           <section class="ice-cream-item">
@@ -257,7 +256,7 @@
               <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>
           <section class="ice-cream-item">
@@ -270,7 +269,7 @@
               <a href="#">Сливочное с шоколадной стружкой</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>
           <section class="ice-cream-item">
@@ -283,7 +282,7 @@
               <a href="#">Сливочно-ванильное с кусочками шоколада</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>
           <section class="ice-cream-item">
@@ -296,7 +295,7 @@
               <a href="#">Сливочное с ментоловым сиропом</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>
           <section class="ice-cream-item">
@@ -309,7 +308,7 @@
               <a href="#">Сливочное с кусочками черного шоколада</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>
           <section class="ice-cream-item">
@@ -322,7 +321,7 @@
               <a href="#">Сливочное с мятным сиропом</a>
             </div>
             <div class="ice-cream-item-hover">
-              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр </a>
+              <a class="ice-cream-item-btn-hover" href="#">Быстрый просмотр</a>
             </div>
           </section>     
         </div>
@@ -335,10 +334,8 @@
           <a href="#">5</a>
           <a class="next-page" href="#"></a>
         </div>
-      </div>
-    </main>
-    <footer class="main-footer-wrap">
-      <div class="main-footer">
+      </main>
+      <footer class="main-footer">
         <div class="social">
           <a class="tw" href="#"></a> 
           <a class="insta" href="#"></a>
@@ -350,14 +347,13 @@
             <li class="second-navigation-left">
               <ul>
                 <li class="with-love"><a href="#">Для поставщиков</a></li>
-                <li><a href="#">О производстве</a></li>
-                
+                <li><a href="#">О производстве</a></li>               
               </ul>
             </li>
             <li class="second-navigation-right">
               <ul>
                 <li><a href="#">Наши документы</a></li>
-              <li><a href="#">Экологические стандарты</a></li>
+                <li><a href="#">Экологические стандарты</a></li>
               </ul>
             </li>
           </ul>
@@ -366,7 +362,7 @@
           <img class="copyright-logo" src="img/HTMLAcademy-logo.png" width="108" height="38" alt="HTML Academy">
           <span class="copyright">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2016</span>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
