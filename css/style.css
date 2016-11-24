@@ -254,11 +254,7 @@ input, textarea {
   width: 343px;
   height: 84px;
   left: -298px;
-<<<<<<< HEAD
   bottom: -80px;
-=======
-  bottom: -81px;
->>>>>>> origin/master
   padding: 20px 0 20px 15px;
   border-radius: 5px;
   background-color: #f8f7f4;
@@ -621,15 +617,9 @@ input, textarea {
   font-weight: 500;
 }
 
-<<<<<<< HEAD
 .wrap-contacts {
   margin: 0 auto;
   width: 1146px;
-=======
-.container, .wrap-contacts {
-  margin: 0 auto;
-  width: 1145px;
->>>>>>> origin/master
   position: relative;
 }
 
@@ -1055,11 +1045,7 @@ body input[type=radio] {
   display: none;
 }
 
-<<<<<<< HEAD
 .index-content:nth-child(2)::after, .index-content:nth-child(4)::after, .index-content:nth-child(5)::after, .second-navigation ul::after {
-=======
-.index-content:nth-child(2)::after, .index-content:nth-child(4)::after, .index-content:nth-child(5)::after, .send-email-form::after, .second-navigation ul::after {
->>>>>>> origin/master
   content: "";
   display: table;
   clear: both;
@@ -1326,10 +1312,9 @@ body input[type=radio] {
 }
 
 .send-email-input {
-  float: left;
   box-sizing: border-box;
   width: 367px;
-  /*margin: 0 8px 0 0 ;*/
+  margin: 0 8px 0 0 ;
   padding: 0 0 0 14px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -1385,7 +1370,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .send-email-btn {
-  float: right;
+  position: relative;
   border-radius: 22px;
   border: none;
   padding: 0 18px 0 18px;
@@ -1394,6 +1379,17 @@ textarea:focus:-ms-input-placeholder {
   color: #fff;
   background-image: linear-gradient(to bottom, #f26839, #db4c38);
   box-shadow: 0 3px 3px 0 rgba(201, 104, 93, 0.8);
+}
+
+.send-email-btn::before {
+  position: absolute;
+  display: none;
+  content: "Электронная почта";
+  top: -20px;
+  left: -365px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #5b9ddf;
 }
 
 .contacts {
@@ -1796,7 +1792,6 @@ textarea:focus:-ms-input-placeholder {
 
 .feedback-form-show {
   display: block;
-<<<<<<< HEAD
   -webkit-animation: bounce 0.5s;
   -moz-animation: bounce 0.5s;
   -ms-animation: bounce 0.5s;
@@ -1852,11 +1847,6 @@ textarea:focus:-ms-input-placeholder {
   }
 }
 
-=======
-  animation: bounce 0.5s;
-}
-
->>>>>>> origin/master
 @keyframes bounce {
   0%   {
     transform: translateY(9999px);
